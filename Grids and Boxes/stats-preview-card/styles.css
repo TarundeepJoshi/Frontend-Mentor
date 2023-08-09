@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+.attribution { font-size: 16px; text-align: center; color: white;
+font-weight: 700;}
+.attribution a { color: hsl(106, 65%, 39%); }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+--Very-dark-blue: hsl(233, 47%, 7%);
+--Dark-desaturated-blue: hsl(244, 38%, 16%);
+--Soft-violet: hsl(277, 64%, 61%);
+--White: hsl(0, 0%, 100%);
+--Slightly-transparent : hsla(0, 0%, 100%, 0.75);
+--Slightly-transparent : hsla(0, 0%, 100%, 0.6);
+}
+
+p{
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+body{
+    background-color: hsl(233, 47%, 7%);
+    font-family: 'Inter';
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 115vh;
+    align-items: center;
+}
+
+.container{
+    background-color: hsl(244, 38%, 16%);
+    margin: 50px 30px;
+    padding-inline-start: 00 20px;
+    border-radius: 0 0.3rem 0.3rem;
+    text-align: center;
+}
+
+.container .picture{
+    background: url(./images/image-header-mobile.jpg) no-repeat center/cover;
+    height: 250px;
+    border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.container .picture .overlay{
+    background-color: hsl(277, 64%, 50%, 0.4);
+    height: 250px;
+    border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.card h1{
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    padding: 0 20px;
+    line-height: 1.2;
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card span{
+    color: hsl(277, 64%, 61%);
+}
+
+.card p{
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 1rem;
+    padding: 0 3rem;
+    text-align: center;
+    font-size: .8rem;
+}
+
+.container .card ul li{
+    margin-bottom: 20px;
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container .card ul li span{
+    display: block;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+.card ul li a{
+    font-size: 12px;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+@media (min-width: 770px){
+    .container{
+        background-color: hsl(244, 38%, 16%);
+        width: 950px;
+        height: 350px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+        border-top-left-radius: .3rem;
+    }
+
+    .container .picture{
+        background: url(./images/image-header-desktop.jpg) no-repeat center/cover;
+        height: 350px;
+        border-top-right-radius: .5rem;
+        border-top-left-radius: 0rem;
+        border-bottom-right-radius: .5rem;
+        width: 100%;
+    }
+    
+    .container .picture .overlay{
+        background-color: hsl(277, 64%, 50%, 0.4);
+        height: 350px;
+        border-top-right-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+    }
+    
+    .card h1{
+        color: hsl(0, 0%, 100%);
+        text-align: left;
+        padding: 0 46px;
+        font-size: 2.1rem;
+        line-height: 1.2;
+        margin-top: 5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .card span{
+        color: hsl(277, 64%, 61%);
+    }
+    
+    .card p{
+        color: hsla(0, 0%, 100%, 0.75);
+        margin-bottom: 1rem;
+        padding: 0 3rem;
+        font-size: 1rem;
+        text-align: left;
+    }
+    
+    .container .card ul li{
+        list-style: none;
+        text-align: left;
+        display: inline-grid;
+        text-transform: uppercase;
+        padding: 2.9rem;
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+    
+    .container .card ul li span{
+        display: block;
+        color: hsl(0, 0%, 100%);
+        font-weight: 700;
+        margin-bottom: .4rem;
+    }
+    
+    .card ul li a{
+        font-size: .8rem;
+        color: hsla(0, 0%, 100%, 0.6);
+    }
+}
