@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.attribution { font-size: 1rem; text-align: center;}
+.attribution a { color: white; }
+
+body{
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    background-image: url(./images/bg-desktop.svg);
+    background-size: cover;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    width: 1200px;
+    max-width: 100%;
+}
+.logo{
+    margin-bottom: 50px;
+}
+.hud-flex{
+    display: flex;
+}
+.hud-flex div{
+    flex: 1;
+}
+.hud-text{
+    color: #fff;
+    margin-left: 40px;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+.hud-text p{
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    opacity: .8;
+}
+button{
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    margin-top: 1rem;
+    color: hsl(257, 40%, 49%);
+    width: 200px;
+    box-shadow: 5px 3px 2px solid black;
+    transition: all .2s ease-in;
+}
+button:hover{
+    cursor: pointer;
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+.social-links{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    list-style: none;
+}
+.social-links a{
+    border-radius: 50%;
+    border: 2px solid white;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 20px;
+    height: 50px;
+    width: 50px;
+    text-decoration: none;
+    justify-content: center;
+}
+.social-links a:hover{
+    color: hsl(300, 69%, 71%);
+    background-color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+}
+
+@media screen and (max-width: 768px){
+    body{
+        width: 400px;
+        margin: 30px auto;
+    }
+    img{
+        max-width: 100%;
+    }
+    .hud-flex{
+        flex-direction: column;
+    }
+    .hud-text{
+        font-size: .2rem;
+        text-align: center;
+        margin: 0;
+        margin-top: 40px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    button{
+        width: 50%;
+    }
+    .social-links{
+        justify-content: center;
+    }
+}
