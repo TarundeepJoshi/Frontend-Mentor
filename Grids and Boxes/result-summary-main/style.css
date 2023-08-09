@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root{
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+    --Light-slate-blue : hsl(252, 100%, 67%);
+    --Light-royal-blue : hsl(241, 81%, 54%);
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Hanken Grotesk';
+}
+
+.container article:first-child{
+    background: linear-gradient(205deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+
+.container article:first-child .head{
+    color: var(--Light-lavender);
+    font-weight: 200;
+    margin-bottom: 1.5rem;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(180deg,  hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: .1rem 0 1.3rem 0;
+}
+.circle__result {
+    color: var(--Light-lavender);
+}
+.score {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--White);
+}
+
+.container article:first-child .head-2{
+    color: var(--White);
+    margin-bottom: .8rem;
+}
+
+.container article:first-child .description{
+    color: var(--Light-lavender);
+    margin-bottom: 1.4rem;
+    
+}
+
+/*second article*/
+.container article:last-child{
+    padding: 2rem;
+}
+
+.container article:last-child .head-3{
+    color: var(--Dark-gray-blue);
+    margin-bottom: 1.2rem;
+}
+
+ul li{
+    list-style: none;
+    display: flex;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-weight: 700;
+}
+.container article:last-child b{
+    color: var(--Dark-gray-blue);
+    font-weight: 700;
+}
+.container article:last-child span{
+    color: hsl(241, 100%, 85%);
+    font-weight: 700;
+}
+.container article:last-child img{
+    margin-right: .6rem;
+}
+
+.container article:last-child .reaction{
+    color: var(--Light-red);
+    background-color: hsl(0, 100%, 93%);
+    font-size: 1.2rem;
+}
+.container article:last-child .reaction span{
+    margin-left: 12.5rem;
+}
+
+.container article:last-child .memory{
+    color: var(--Orangey-yellow);
+    font-size: 1.2rem;
+    background-color: hsl(0, 100%, 98%);
+}
+.container article:last-child .memory span{
+    margin-left: 12.7rem;
+}
+
+.container article:last-child .verbal{
+    color: var(--Green-teal);
+    font-size: 1.2rem;
+    background-color: hsl(166, 100%, 93%);
+}
+.container article:last-child .verbal span{
+    margin-left: 13.7rem;
+}
+
+.container article:last-child .visual{
+    color: var(--Light-royal-blue);
+    font-size: 1.2rem;
+    background-color: var(--Pale-blue);
+}
+.container article:last-child .visual span{
+    margin-left: 13.7rem;
+}
+
+button{
+    padding: 1rem;
+    width: 100%;
+    background-color: var(--Dark-gray-blue);
+    font-weight: 500;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    color: var(--Pale-blue);
+    transition: .3s ease-in-out;
+}
+button:hover{
+    background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+
+@media (min-width: 768px){
+    body{
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+   .container {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 1px 30px hsla(219, 15%, 55%, 0.233);
+    border-radius: 1rem;
+    width: 50rem;
+    height: 50vh;
+   }
+
+   .container article:first-child{
+    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 1.2rem;
+   }
+
+   .container article:last-child{
+    width: 72rem;
+    margin-top: -3rem;
+   }
+
+   ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.6rem;
+    border-radius: 0.5em;
+    padding: 0 15px;
+    font-size: 1rem;
+    font-weight: bolder;
+   }
+
+   .container article:last-child .head-3{
+    color: var(--Dark-gray-blue);
+    margin-top: 1.2rem;
+   }
+}
