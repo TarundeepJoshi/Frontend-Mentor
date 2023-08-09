@@ -1,11 +1,11 @@
 <div align="center">
   
-  # Dev Challenges 🌐:
-  
+  # Frontend Mentor 🌐:
+   
 </div>
 
-Dev Challenges provide challenges in **Web development**   
-See my [Dev Challenges portfolio](https://portfolio.devchallenges.io/TarundeepJoshi) and for more informations check [Dev Challenges website](https://devchallenges.io/)
+Frontend grids, boxes and responsive pages challenges in **Web development**   
+See my [Frontend Mentor portfolio](https://www.frontendmentor.io/profile/TarundeepJoshi) and for more informations check [Frontend Mentor website](https://www.frontendmentor.io/home)
 
 ## Features 🌟:
 
