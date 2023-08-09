@@ -5,7 +5,7 @@
 </div>
 
 Frontend grids, boxes and responsive pages challenges in **Web development**   
-See my [Dev Challenges portfolio](https://www.frontendmentor.io/profile/TarundeepJoshi) and for more informations check [Frontend Mentor website](https://www.frontendmentor.io/home)
+See my [Frontend Mentor portfolio](https://www.frontendmentor.io/profile/TarundeepJoshi) and for more informations check [Frontend Mentor website](https://www.frontendmentor.io/home)
 
 ## Features 🌟:
 
