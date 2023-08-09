@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+.attribution { font-size: 18px; text-align: center; margin-top: 1rem;
+font-weight: 700;}
+.attribution a { color: hsl(0, 94%, 50%); }
+
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+body{
+    font-family: "Kumbh Sans", sans-serif;
+    background-color: var(--Dark-cyan);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.bg-top{
+    top: -62%;
+    position: absolute;
+    left: -20%;
+    z-index: -1;
+}
+
+.bg-bottom{
+    bottom: -79%;
+    position: absolute;
+    right: -8%;
+    z-index: -1;
+}
+
+img{
+    max-width: 100%;
+}
+
+article:first-child img{
+    border-radius: 1rem 1rem 0 0;
+}
+
+article:last-child{
+    margin-top: -3rem;
+    background-color: #fff;
+    border-radius: 0 0 1rem 1rem;
+}
+
+article:last-child img{
+    border-radius: 4rem;
+    background-color: #fff;
+    margin: -0.1rem 7.5rem;
+    padding: 0.4rem;
+}
+
+article:last-child h1{
+    color: var(--Very-dark-desaturated-blue);
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+article:last-child span{
+    color: var(--Dark-grayish-blue);
+    font-weight: 200;
+    margin-left: 0.5rem;
+}
+
+article:last-child h3{
+    color: var(--Dark-gray);
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+hr{
+    border: 1px solid rgb(231 231 231);
+    margin-bottom: 2rem;
+}
+
+article:last-child ul{
+    list-style: none;
+    display: inline-flex;
+    text-align: center;
+    font-weight: 900;
+    font-family: "Kumbh Sans", sans-serif;
+    color: var(--Very-dark-desaturated-blue);
+    margin-bottom: 1rem;
+}
+
+article:last-child a{
+    display: table-cell;
+    font-weight: 100;
+    padding-top: 0.5rem;
+    color: var(--Dark-grayish-blue);
+}
+
+article:last-child li {
+    padding: 1.9rem;
+    margin-top: -3rem;
+    margin-bottom: -1rem;
+}
