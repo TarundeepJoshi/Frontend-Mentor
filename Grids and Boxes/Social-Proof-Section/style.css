@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    background-image: url(./images/bg-pattern-top-mobile.svg),
+    url(./images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top left,
+    bottom -45rem right 0;
+}
+
+h1{
+    color: var(--Very-Dark-Magenta);
+    text-align: center;
+    margin-top: 2.5rem;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 2rem;
+}
+
+.par{
+    color: var(--Dark-Grayish-Magenta);
+    text-align: center;
+    margin-top: 2rem;
+    font-family: 'League Spartan', sans-serif;
+    line-height: 1.7rem;
+    width: 20rem;
+    transform: translateX(10%);
+}
+
+.review{
+    background-color: var(--Light-Grayish-Magenta);
+    line-height: 1.5rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 0.7rem;
+    color: var(--Very-Dark-Magenta);
+    font-weight: 800;
+    border-radius: .4rem;
+    width: 75%;
+    transform: translateX(15%);
+    margin-top: 3.5rem;
+}
+
+.report{
+    background-color: var(--Light-Grayish-Magenta);
+    line-height: 1.5rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 0.7rem;
+    color: var(--Very-Dark-Magenta);
+    font-weight: 800;
+    border-radius: .4rem;
+    width: 75%;
+    transform: translateX(15%);
+}
+
+.tech{
+    background-color: var(--Light-Grayish-Magenta);
+    line-height: 1.5rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 0.7rem;
+    color: var(--Very-Dark-Magenta);
+    font-weight: 800;
+    border-radius: .4rem;
+    width: 75%;
+    transform: translateX(15%);
+    margin-bottom: 3rem;
+}
+
+.grid {
+    background-color: hsl(300, 43%, 22%);
+    padding: 1.9rem;
+    margin-bottom: 1em;
+    color: hsl(0, 0%, 100%);
+    line-height: 1.5;
+    letter-spacing: 1.6px;
+    border-radius: 10px;
+    width: 76%;
+    transform: translateX(19%);
+}
+
+.buyer-details {
+    display: flex;
+    padding-bottom: 1rem;
+}
+
+.buyer-img {
+    margin-right: 1em;
+}
+
+.buyer-img img {
+    border-radius: 100%;
+}
+
+.buyer-text {
+    align-self: center;
+}
+
+.verified {
+    color: hsl(333, 80%, 67%);
+}
+
+
+
+@media (min-width: 425px) {
+    .par{
+        transform:translateX(20%);
+    }
+}
+
+@media (min-width: 768px) {
+    .par{
+        transform: translateX(39%);
+        width: 27rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .par{
+        transform: translateX(39%);
+        width: 36rem;
+    }
+    .grid{
+        transform: translateX(16.6%);
+    }
+}
+
+@media (min-width: 1440px) {
+    
+    body{
+        background-image: url(./images/bg-pattern-top-desktop.svg),
+        url(./images/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: top left,
+        bottom -45rem right 0;
+    }
+
+    h1{
+        text-align: left;
+        margin-left: 10.4rem;
+        line-height: 2rem;
+    }
+    .par{
+        text-align: left;
+        margin-left: 0.7rem;
+        width: 25rem;
+    }
+
+    .icon{
+       width: 9rem;
+       letter-spacing: 3px;
+    }
+    .review{
+        display: flex;
+        width: 26%;
+        transform: translateX(45rem);
+        margin-top: -11rem;
+        
+    }
+    .report{
+        display: flex;
+        width: 26%;
+        transform: translateX(48rem);
+    }
+    .tech{
+        display: flex;
+        width: 26%;
+        transform: translateX(52rem);
+    }
+    .col{
+        margin-top: -.1rem;
+    }
+    .col-1{
+        margin-top: -.15rem;
+    }
+    .col-2{
+        margin-top: -.15rem;
+    }
+
+    .buyers{
+        width: 36%;
+        letter-spacing: 1.4px;
+    }
+    .two{
+        transform: translateX(15rem);
+        margin-top: -16rem;
+        margin-left: .8rem;
+    }
+    .three{
+        transform: translateX(28rem);
+        margin-top: -16rem;
+        margin-left: 1.1rem;
+    }
+}
