@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (min-width: 500px)
+{
+    .container{
+        width: 375px;
+    }
+    .bg__image{
+        background-color: url(./images/pattern-background-desktop.svg) no-repeat center/cover;
+        height: 50vh;
+    }
+}
+
+:root{    
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+.bg__image{
+    background: url(./images/pattern-background-mobile.svg) no-repeat center/cover;
+    height: 400px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    font-size: 16px;
+    font-family: "Red Hat Display", sans-serif;
+    background-color: var(--Pale-blue);
+    height: calc(100vh - 1px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container article:first-child .main-img{
+    background-color: var(--White);
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 27%);
+    max-width: 375px;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.container article:last-child{
+    background-color: var(--Very-pale-blue);
+    border-radius: 0 0 1rem 1rem;
+    display: flex;
+    margin-bottom: 1rem;
+    margin-top: -1rem;
+    padding: 2rem;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 27%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+article:last-child h1{
+    margin-bottom: 1rem;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+article:last-child p{
+    color: hsl(224, 23%, 55%);
+    font-weight: 100;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.wrapper{
+    background-color: hsl(225, 60%, 96%);
+    border-radius: 0.6rem;
+    margin-bottom: 1.3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1.1rem 0.5rem 1rem;
+}
+.wrapper h2{
+    color: hsl(223, 47%, 23%);
+    font-size: 1rem;
+    padding-right: 1.5rem;
+    font-weight: 900;
+    padding-top: 0.5rem;
+}
+.wrapper .price{
+    color: var(--Desaturated-blue);
+    font-size: 1rem;
+    font-weight: 700;
+}
+.wrapper h4{
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    cursor: pointer;
+    padding-right: 0.1rem;
+}
+.wrapper h4:hover{
+    color: hsl(245, 75%, 69%);
+    text-decoration: none;
+}
+.wrapper .music{
+    position: relative;
+    padding-right: 2rem;
+}
+
+article:last-child .btn{
+    background-color: hsl(245, 75%, 52%);
+    outline: none;
+    border: none;
+    margin-bottom: 1rem;
+    font-family: "Red Hat Display";
+    padding: 0.825rem 5.6rem;
+    color: var(--Very-pale-blue);
+    font-weight: 900;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.6rem;
+    box-shadow:3px 12px 22px rgb(0 0 0 / 27%);
+}
+article:last-child .btn:hover{
+    background-color: hsl(245, 75%, 69%);
+}
+
+article:last-child h3{
+    font-size: 1rem;
+    color: var(--Desaturated-blue);
+    font-weight: 900;
+    cursor: pointer;
+}
+article:last-child h3:hover{
+    color: hsl(223, 47%, 23%);    font-weight: 900;
+}
