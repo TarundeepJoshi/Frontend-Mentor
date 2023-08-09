@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.attribution { font-size: 15px; text-align: center; margin-bottom: 2rem;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root{
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);  
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Very-Light-Gray);
+}
+
+header{
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.h-1{
+    font-family: 'Poppins';
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    margin-top: 4rem;
+}
+.h-2{
+    font-weight: 600;
+    font-size: 1.65rem;
+    color: var(--Very-Dark-Blue);
+    font-family: sans-serif, 'Poppins';
+}
+.p-1{
+    text-align: center;
+    color: var(--Grayish-Blue);
+    font-family: sans-serif;
+    margin-top: 1rem;
+    width: 19rem;
+}
+
+
+.box-1{
+    width: 330px;
+    height: 220px;
+    background-color: white;
+    margin: 20px;
+    padding: 30px;
+    margin-top: 2rem;
+    box-shadow: 0px 13px 16px -15px;
+    border-top: 0.2rem solid cyan;
+    border-radius: 5px;
+}
+img{
+    position: relative;
+    float: right;
+    margin-top: 1rem;
+}
+.box-h1{
+    font-family: sans-serif;
+    color: var(--Very-Dark-Blue);
+}
+.box-p1{
+    font-family: sans-serif;
+    margin-top: .5rem;
+    line-height: 25px;
+    color: var(--Grayish-Blue);
+}
+
+
+.box-2{
+    width: 330px;
+    height: 220px;
+    background-color: white;
+    margin: 20px;
+    padding: 30px;
+    margin-top: 2rem;
+    box-shadow: 0px 13px 16px -15px;
+    border-top: 0.2rem solid var(--Red);
+    border-radius: 5px;
+}
+img{
+    position: relative;
+    float: right;
+    margin-top: 1rem;
+}
+.box-h2{
+    font-family: sans-serif;
+    color: var(--Very-Dark-Blue);
+}
+.box-p2{
+    font-family: sans-serif;
+    margin-top: .5rem;
+    line-height: 25px;
+    color: var(--Grayish-Blue);
+}
+
+
+.box-3{
+    width: 330px;
+    height: 220px;
+    background-color: white;
+    margin: 20px;
+    padding: 30px;
+    margin-top: 2rem;
+    box-shadow: 0px 13px 16px -15px;
+    border-top: 0.2rem solid var(--Orange);
+    border-radius: 5px;
+}
+img{
+    position: relative;
+    float: right;
+    margin-top: 1rem;
+}
+.box-h3{
+    font-family: sans-serif;
+    color: var(--Very-Dark-Blue);
+}
+.box-p3{
+    font-family: sans-serif;
+    margin-top: .5rem;
+    line-height: 25px;
+    color: var(--Grayish-Blue);
+}
+
+
+.box-4{
+    width: 330px;
+    height: 220px;
+    background-color: white;
+    margin: 20px;
+    padding: 30px;
+    margin-top: 2rem;
+    box-shadow: 0px 13px 16px -15px;
+    border-top: 0.2rem solid var(--Blue);
+    border-radius: 5px;
+}
+img{
+    position: relative;
+    float: right;
+    margin-top: 1rem;
+}
+.box-h4{
+    font-family: sans-serif;
+    color: var(--Very-Dark-Blue);
+}
+.box-p4{
+    font-family: sans-serif;
+    margin-top: .5rem;
+    line-height: 25px;
+    color: var(--Grayish-Blue);
+}
+
+@media (min-width: 668px){
+
+    main, div{
+        max-width: 1400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    main .box-1:nth-child(odd){
+        transform: translateY(50%);
+    }
+
+    main .box-3:nth-child(odd){
+        transform: translateY(50%);
+    }
+
+    img{
+        position: relative;
+        margin-left: 12rem;
+        margin-top: 1rem;
+    }
+    .box-h1{
+        font-family: sans-serif;
+        color: var(--Very-Dark-Blue);
+        margin-right: 9rem;
+    }
+
+    .box-h2{
+        font-family: sans-serif;
+        color: var(--Very-Dark-Blue);
+        margin-right: 7.48rem;
+    }
+
+    .box-h3{
+        font-family: sans-serif;
+        color: var(--Very-Dark-Blue);
+        margin-right: 12.2rem;
+    }
+
+    .box-h4{
+        font-family: sans-serif;
+        color: var(--Very-Dark-Blue);
+        margin-right: 9.5rem;
+    }
+
+    .p-1{
+        text-align: center;
+        color: var(--Grayish-Blue);
+        font-family: sans-serif;
+        margin-top: 1rem;
+        width: 30rem;
+    }
+    
+}
