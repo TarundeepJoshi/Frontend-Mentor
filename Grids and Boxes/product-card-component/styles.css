@@ -1,0 +1,156 @@
+/* - Mobile: 375px
+- Desktop: 1440px */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+
+.attribution { font-size: 11px; text-align: center; margin-top: 2rem; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+:root{
+    /* PRIMARY */
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    
+    /* NEUTRAL */
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+img {
+    max-width: 100%;
+}
+
+.container{
+    max-width: 600px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--Cream);
+    margin: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 0.1px);
+    margin: 0.15rem;
+}
+
+.container article:last-child{
+    background-color: var(--White);
+    padding: 1.5rem;
+    margin-top: -1rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+h2{
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: var(--Dark-grayish-blue);
+}
+
+article:last-child h1{
+    margin-bottom: 1rem;
+    font-family: "fraunces", sans-serif;
+    font-size: 2rem;
+    color: var(--Very-dark-blue);
+}
+
+.container article:first-child img{
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+article p{
+    line-height: 1.5rem;
+    color: var(--Dark-grayish-blue);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+article .price{
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: "fraunces";
+}
+
+.container ul{
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+article li{
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+    margin-right: 1.5rem;
+}
+
+ul li{
+    list-style: none;
+}
+
+.container .btn{
+    background-color: var(--Dark-cyan);
+    color: white;
+    font-weight: 700;
+    width: 100%;
+    font-family: "montserrat";
+    outline: none;
+    border-radius: 0.625rem;
+    padding: 0.625rem 2rem;
+    display: flex;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.container .btn img{
+    margin-right: 0.5rem;
+}
+
+.container .btn:hover{
+    background-color: hsl(156, 27%, 24%);
+}
+
+@media (min-width: 640px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container article:first-child img{
+        border-radius: 0.625rem 0 0 0.625rem;
+        width: 100%;
+    }
+
+    .container article:last-child{
+        border-radius: 0 0.625rem 0.625rem 0;
+        margin-top: 0;
+        padding: 1.5rem 1.5rem 0;
+    }
+
+    picture img{
+        height: 100%;
+    }
+
+    .container p{
+        margin-bottom: 1rem;
+    }
+}
