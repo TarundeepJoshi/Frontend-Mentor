@@ -10,27 +10,67 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | Intro component with sign up form</title>
 
     <style>
       .attribution {
-        font-size: 11px;
+        font-size: 20px;
         text-align: center;
+        margin-top: 1rem;
       }
+
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
     </style>
   </head>
   <body>
-    Learn to code by watching others See how experienced developers solve
-    problems in real-time. Watching scripted tutorials is great, but
-    understanding how developers think is invaluable. Try it free 7 days then
-    $20/mo. thereafter First Name Last Name Email Address Password Claim your
-    free trial By clicking the button, you are agreeing to our Terms and
-    Services
+    <div class="container">
+      <div class="row justify-content-center align-items-center vh-100 ">
+        <div class="col-md-6">
+          <section>
+            <article>
+              <h1>Learn to code by watching others</h1>
+              <p>
+                See how experienced developers solve problems in real-time.
+                Watching scripted tutorials is great, but understanding how
+                developers think is invaluable.
+              </p>
+            </article>
+          </section>
+        </div>
+
+        <div class="col">
+          <section>
+            <div class="card-heading">
+              <p><span>Try it free 7 days</span>then $20/mo. thereafter</p>
+            </div>
+
+            <div class="form-container">
+              <input type="text" placeholder="First Name" />
+              <input type="text" placeholder="Last Name" />
+              <input type="email" placeholder="Email Address" id="" />
+              <input type="password" placeholder="Password" id="" />
+              <div class="form-button">
+                <button>claim your free trial</button>
+              </div>
+              <p>
+                By clicking the button, you are agreeing to our
+                <span>Terms and Services</span>
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
 
     <footer>
       <p class="attribution">
