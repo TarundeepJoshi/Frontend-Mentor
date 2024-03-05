@@ -24,3 +24,6 @@ body {
     flex-direction: column;
 }
 
+.left-side h1 {
+    font-size: 3rem;
+}
