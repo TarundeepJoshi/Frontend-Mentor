@@ -1,8 +1,9 @@
 const firstName = document.getElementById("firstName");
 const lastName = document.getElementById("lastName");
-const email = document.getElementById("email");
+const emailAddress = document.getElementById("email");
 const password = document.getElementById("password");
 const submitButton = document.getElementById("submitFormButton");
+const form = document.querySelector("form");
 
 const firstNameErrorMessage = document.querySelector(".error-message-first");
 const lastNameErrorMessage = document.querySelector(".error-message-last");
@@ -49,7 +50,7 @@ function lastNameValidation() {
 
 function emailValidation() {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  const email = email.value;
+  const email = emailAddress.value;
   if (emailRegex.test(email)) {
     emailErrorMessage.innerHTML = "";
     emailErrorIcon.classList.add("hidden");
