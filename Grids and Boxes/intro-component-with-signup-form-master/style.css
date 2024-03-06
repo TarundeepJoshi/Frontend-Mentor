@@ -39,19 +39,58 @@ body {
     padding: 1rem;
     border-radius: 5px;
     border: 1px solid transparent;
-    box-shadow: 0 0 0 .6px var(--Grayish-Blue);
+    box-shadow: 0 0 0 1px var(--Grayish-Blue);
     margin-bottom: 1rem;
-    caret-color: hsl(248, 32%, 49%);
 }
 
 .form-container input:focus {
     outline: none;
-    box-shadow: 0 0 0 2px var(--Blue);
-    caret-color: hsl(248, 32%, 49%);
+    box-shadow: 0 0 0 1.5px var(--Blue);
 }
 
+.form-button button {
+    background-color: var(--Green);
+    box-shadow: 0 5px 0 hsl(153, 49%, 35%);
+    transition: all .3s ease-in-out;
+}
 
+.form-button button:hover {
+    box-shadow: 0 5px 0 hsl(153, 55%, 53%);
+    background-color: hsl(153, 67%, 59%);
+}
 
 footer {
-    margin-top: 10rem;
+    margin-top: 2rem;
+}
+
+@media (min-width: 990px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+
+    .left-side h1 {
+        font-size: 4rem;
+    }
+
+    .left-side p {
+        font-size: 1.5rem;
+    }
+
+    .card-heading {
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+    .form-button button {
+        font-size: 1.5rem;
+    }
+
+    .form-container p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
 }
