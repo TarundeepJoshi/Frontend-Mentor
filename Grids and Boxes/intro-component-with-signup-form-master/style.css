@@ -16,8 +16,12 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background-image: url(./images/bg-intro-desktop.png);
+    background-image: url(./images/bg-intro-mobile.png);
     background-color: var(--Red);
+}
+
+.section {
+    padding: 2rem .3rem;
 }
 
 .left-side h1 {
@@ -59,11 +63,19 @@ body {
     background-color: hsl(153, 67%, 59%);
 }
 
+.form-container p {
+    margin-bottom: 0;
+}
+
 footer {
     margin-top: 2rem;
 }
 
-@media (min-width: 990px) {
+@media (min-width: 767px) {
+    body {
+        background-image: url(./images/bg-intro-desktop.png);
+    }
+
     .grid-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -93,4 +105,79 @@ footer {
         font-size: 1.5rem;
         text-align: center;
     }
+}
+
+
+/* ERROR MESSAGE DISPLAY */
+
+.form-container .error-message-first {
+    color: var(--Red);
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-align: right;
+    font-style: italic;
+    position: absolute;
+    right: 1.5rem;
+    top: 5.7rem;
+}
+
+.form-container .error-message-last {
+    color: var(--Red);
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-align: right;
+    position: absolute;
+    right: 1.5rem;
+    font-style: italic;
+    top: 10.7rem;
+}
+
+.form-container .error-message-email {
+    color: var(--Red);
+    font-size: 0.7rem;
+    font-weight: 500;
+    font-style: italic;
+    text-align: right;
+    position: absolute;
+    right: 1.5rem;
+    top: 15.7rem;
+}
+
+.form-container .error-message-password {
+    color: var(--Red);
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-align: right;
+    position: absolute;
+    right: 1.5rem;
+    top: 20.7rem;
+    font-style: italic;
+}
+
+.hidden {
+    display: none;
+}
+
+.icon1 {
+    position: absolute;
+    right: 3rem;
+    top: 3.3rem;
+}
+
+.icon2 {
+    position: absolute;
+    right: 3rem;
+    top: 8.3rem;
+}
+
+.icon3 {
+    position: absolute;
+    right: 3rem;
+    top: 13.3rem;
+}
+
+.icon4 {
+    position: absolute;
+    right: 3rem;
+    top: 18.3rem;
 }
