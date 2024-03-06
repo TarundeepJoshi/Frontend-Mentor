@@ -24,7 +24,6 @@
       .attribution {
         font-size: 20px;
         text-align: center;
-        margin-top: 1rem;
       }
 
       .attribution a {
@@ -33,37 +32,38 @@
     </style>
   </head>
   <body>
-    <div
-      class="container justify-content-center align-items-center min-vh-100 d-flex"
-    >
-      <div class="row">
-        <div class="col-md-6 text-white left-side">
-          <h1 class="fw-bold mb-3">Learn to code by watching others</h1>
-          <p>
-            See how experienced developers solve problems in real-time. Watching
-            scripted tutorials is great, but understanding how developers think
-            is invaluable.
+    <div class="container d-flex text-center flex-column">
+      <div class="left-side text-white">
+        <h1 class="fw-bold mb-3">Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+
+      <div class="right-side">
+        <div class="card-heading text-white">
+          <p class="p-3 rounded-3 mt-5 mb-5">
+            <span class="fw-bold">Try it free 7 days</span> then <br />
+            $20/mo. thereafter
           </p>
         </div>
 
-        <div class="col right-side">
-          <div class="card-heading">
-            <p><span>Try it free 7 days</span>then $20/mo. thereafter</p>
+        <div
+          class="form-container bg-white p-3 rounded-3 d-inline-flex flex-column"
+        >
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Last Name" />
+          <input type="email" placeholder="Email Address" id="" />
+          <input type="password" placeholder="Password" id="" />
+          <div class="form-button">
+            <button>claim your free trial</button>
           </div>
-
-          <div class="form-container">
-            <input type="text" placeholder="First Name" />
-            <input type="text" placeholder="Last Name" />
-            <input type="email" placeholder="Email Address" id="" />
-            <input type="password" placeholder="Password" id="" />
-            <div class="form-button">
-              <button>claim your free trial</button>
-            </div>
-            <p>
-              By clicking the button, you are agreeing to our
-              <span>Terms and Services</span>
-            </p>
-          </div>
+          <p>
+            By clicking the button, you are agreeing to our
+            <span>Terms and Services</span>
+          </p>
         </div>
       </div>
     </div>

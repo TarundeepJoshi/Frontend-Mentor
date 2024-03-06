@@ -18,12 +18,40 @@ body {
     font-family: "Poppins", sans-serif;
     background-image: url(./images/bg-intro-desktop.png);
     background-color: var(--Red);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 .left-side h1 {
-    font-size: 3rem;
+    font-size: 2.2rem;
+}
+
+.left-side p {
+    font-size: 1.4rem;
+}
+
+.card-heading p {
+    background-color: var(--Blue);
+    margin-bottom: 0;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+}
+
+.form-container input {
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    box-shadow: 0 0 0 .6px var(--Grayish-Blue);
+    margin-bottom: 1rem;
+    caret-color: hsl(248, 32%, 49%);
+}
+
+.form-container input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--Blue);
+    caret-color: hsl(248, 32%, 49%);
+}
+
+
+
+footer {
+    margin-top: 10rem;
 }
