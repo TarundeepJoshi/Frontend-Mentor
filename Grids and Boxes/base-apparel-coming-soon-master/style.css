@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
 
 * {
     margin: 0;
@@ -13,48 +13,162 @@
     --Dark-Grayish-Red: hsl(0, 6%, 24%);
 }
 
+img {
+    max-width: 100%;
+}
+
 body {
+    font-size: 16px;
+}
+
+.logo {
+    padding: 1.5rem 0 0 1.5rem;
+}
+
+main {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    min-height: 100vh;
+    flex-direction: column-reverse;
 }
 
-.container {
-    padding: 0;
-}
-
-.container .logo {
-    text-align: left;
-}
-
-.container .details h1 {
+main h1 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 3rem;
     color: var(--Dark-Grayish-Red);
-    font-size: 2.8rem;
-    line-height: 2.7rem;
-    letter-spacing: .5rem;
 }
 
-.container .details h1 span,
-.container .details p,
-.container .email input::placeholder {
+main h1 span {
     color: var(--Desaturated-Red);
+    font-weight: 300;
 }
 
-.container .email input {
+main article:first-child {
+    text-align: center;
+    padding: 0 1.5rem 2rem;
+}
+
+main article:first-child p {
+    color: hsl(0, 36%, 70%);
+    line-height: 1.6;
+    font-size: 1.3rem;
+}
+
+main article .logo {
+    display: none;
+}
+
+main article picture img {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+form {
+    position: relative;
+}
+
+form input {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
     border: none;
     border: 1px solid transparent;
-    font-size: 1.2rem;
     box-shadow: 0 0 0 1px var(--Desaturated-Red);
+    border-radius: 30px;
+    width: 100%;
+    margin: 2rem 0 0;
+    color: hsl(0, 6%, 24%);
 }
 
-.container .email input:focus {
+form input:focus {
     outline: none;
     box-shadow: 0 0 0 1.5px var(--Desaturated-Red);
 }
 
-.hidden {
+form input::placeholder {
+    color: var(--Desaturated-Red);
+}
+
+/* Beginning of code that breaks */
+form label {
+    position: absolute;
+    top: 35%;
+    transform: translateY(35%);
+    right: 5.5rem;
     display: none;
+}
+
+form button {
+    position: absolute;
+    top: 81%;
+    right: -0.5rem;
+    transform: translateY(-65%);
+
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border: none;
+    border-radius: 30px;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 80%, 86%));
+}
+
+/* End of code that breaks */
+
+.error {
+    color: var(--Soft-Red);
+    text-align: left;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    body {
+        background: url("./images/bg-pattern-desktop.svg") no-repeat center/cover;
+    }
+
+    main {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main article {
+        flex: 1;
+    }
+
+    main article picture img {
+        margin-top: -4rem;
+    }
+
+    main article:first-child {
+        text-align: left;
+    }
+
+    .logo {
+        display: block;
+    }
+
+    main h1 {
+        font-size: 4rem;
+        width: 500px;
+    }
+
+    main article:first-child p {
+        width: 500px;
+    }
+
+    form input {
+        width: 500px;
+    }
+
+    form label {
+        right: 340px;
+    }
+
+    form button {
+        right: 250px;
+    }
 }
