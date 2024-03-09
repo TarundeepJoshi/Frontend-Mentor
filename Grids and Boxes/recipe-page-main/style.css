@@ -1,19 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "Outfit", sans-serif;
-    font-family: "Young Serif", sans-serif;
-    font-size: 16px;
-}
-
 :root {
     --White: hsl(0, 0%, 100%);
     --Rose-White: hsl(330, 100%, 98%);
@@ -23,4 +10,64 @@ body {
     --Dark-Charcoal: hsl(24, 5%, 18%);
     --Nutmeg: hsl(14, 45%, 36%);
     --Dark-Raspberry: hsl(332, 51%, 32%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    background-color: var(--Rose-White);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-container .heading {
+    font-family: "Young Serif", sans-serif;
+}
+
+.card-container h2 {
+    font-family: "Young Serif", sans-serif;
+    color: var(--Nutmeg);
+}
+
+.card-container img {
+    max-width: 100%;
+}
+
+.card-container .preptime {
+    background-color: var(--Eggshell);
+}
+
+.card-container .preptime h3 {
+    color: var(--Dark-Raspberry);
+}
+
+.card-container span {
+    color: var(--Dark-Charcoal);
+    font-weight: 600;
+}
+
+.card-container li {
+    margin-bottom: .5rem;
+}
+
+.card-container .nutrition .grid-nutrition {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card-container .nutrition .grid-nutrition span {
+    color: var(--Nutmeg);
+}
+
+.card-container .nutrition .grid-nutrition p {
+    border-bottom: 1px solid var(--Light-Grey);
+    text-align: center;
 }
