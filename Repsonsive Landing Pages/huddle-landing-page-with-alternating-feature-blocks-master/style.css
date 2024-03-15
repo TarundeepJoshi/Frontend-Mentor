@@ -51,10 +51,6 @@ body {
     background-color: var(--Very-Dark-Cyan);
 }
 
-.contact-links {
-    display: inline;
-}
-
 .contact-links img {
     width: 15px;
     height: 15px;
