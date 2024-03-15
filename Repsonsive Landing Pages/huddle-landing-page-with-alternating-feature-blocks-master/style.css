@@ -17,6 +17,32 @@
 body {
     font-size: 18px;
     font-family: "Poppins", sans-serif;
+    background: url(./images/bg-hero-mobile.svg) no-repeat;
     /* font-family: "Open Sans", sans-serif; */
 }
 
+.top-content {
+    background-color: var(--Very-Pale-Cyan);
+}
+
+.header button {
+    width: 8rem;
+    font-size: 1rem;
+}
+
+.header button:hover {
+    color: var(--Grayish-Blue);
+}
+
+.header-button {
+    background-color: var(--Pink);
+}
+
+.header-button:hover {
+    background-color: hsl(322, 86%, 69%);
+}
+
+.middle-cards p {
+    font-size: .92rem;
+    color: var(--Grayish-Blue);
+}
