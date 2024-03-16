@@ -17,11 +17,12 @@
 body {
     font-size: 18px;
     font-family: "Poppins", sans-serif;
-    background: url(./images/bg-hero-mobile.svg) no-repeat;
-    /* font-family: "Open Sans", sans-serif; */
+
 }
 
 .top-content {
+    background-image: url(./images/bg-hero-mobile.svg);
+    background-repeat: no-repeat;
     background-color: var(--Very-Pale-Cyan);
 }
 
@@ -35,6 +36,7 @@ body {
 }
 
 .header-button {
+    width: 15rem;
     background-color: var(--Pink);
 }
 
@@ -45,6 +47,10 @@ body {
 .middle-cards p {
     font-size: .92rem;
     color: var(--Grayish-Blue);
+}
+
+.middle-cards .card .card-image img {
+    width: 100%;
 }
 
 .footer-content {
@@ -74,4 +80,64 @@ body {
 .footer-content ul li a:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+.social-links li {
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: .5rem;
+}
+
+.social-links li:hover {
+    border: 1px solid var(--Pink);
+}
+
+@media screen and (min-width: 767px) {
+    .top-content {
+        background-image: url(./images/bg-hero-desktop.svg);
+        background-repeat: no-repeat;
+        background-color: var(--Very-Pale-Cyan);
+    }
+
+    .grid-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .grid-content-first {
+        text-align: left;
+    }
+
+    .middle-cards .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .card-details {
+        text-align: left;
+    }
+
+    .middle-cards .card .card-image img {
+        width: 100%;
+    }
+
+    .community-card {
+        height: 8rem;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-content {
+        display: flex;
+        align-items: center;
+    }
+
+    .copyright {
+        display: none;
+    }
 }
